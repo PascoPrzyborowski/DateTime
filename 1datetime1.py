@@ -1,18 +1,18 @@
 
-# from datetime import datetime
+from datetime import datetime
 # #import datetime year = datetime.date.today().year.
 
 
-# current_datetime = datetime.now()
+current_datetime = datetime.now()
 
-# sh_da = dir(current_datetime)
-# c_d = current_datetime
+sh_da = dir(current_datetime)
+c_d = current_datetime
 
-# print()
-# print(c_d)
-# print()
-# print(sh_da)
-# print()
+print()
+print(c_d)
+print()
+print(sh_da)
+print()
 
 
 #Task1
@@ -230,13 +230,13 @@
 
 ##Task2.3
 
-from datetime import datetime, timedelta, date
+# from datetime import datetime, timedelta, date
 
-remind_me = "Hello Friedrich, your rent of 300 € is due on 25 January, 2021."
+# remind_me = "Hello Friedrich, your rent of 300 € is due on 25 January, 2021."
 
-start_date = datetime(year=2022, month=9, day=15)
+# start_date = datetime(year=2022, month=9, day=15)
 
-print() 
-for i in range(1,13):
-    da_date = date(year=2022, month=i, day=25)
-    print("test"+ da_date.strftime({%A the %dth of %B, %Y}))
+# print() 
+# for i in range(1,13):
+#     da_date = date(year=2022, month=i, day=25)
+#     print("test"+ da_date.strftime({%A the %dth of %B, %Y}))
