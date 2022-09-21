@@ -136,9 +136,37 @@ now = dt.now()
 # my_e_date3 = input("Enter your Event Day 'dd': ")
 # my_e_day = int(my_e_date3)
 
+
+
+import time
+import sys
+
+
+
+def print_slow(str):
+    for letter in str:  #grab each letter
+        sys.stdout.write(letter) # pritns out letter
+        sys.stdout.flush()  #flush the line and rewrite it
+        time.sleep(0.2)
+        
+def print_slow2(str):
+    for letter in str:  #grab each letter
+        sys.stdout.write(letter) # pritns out letter
+        sys.stdout.flush()  #flush the line and rewrite it
+        time.sleep(0.1)
+
+# print_slow(str)
+# print()
+# time.sleep(1)
+
+
+
+
 print()
-print("My personal Event Date? ")
-time.sleep(2)
+time.sleep(1)
+print_slow("My personal Event Date? ")
+time.sleep(1)
+print()
 # print()
 # print("My personal Event Date is: ")
 # print()
@@ -148,10 +176,23 @@ my_e_day3 = "28"
 my_e_date4 = str(my_e_day3  + "." + my_e_month2 + "." + my_e_year1) 
 
 print()
-print("My personal Event Date is:" + my_e_date4)
-time.sleep(2)
-event2 = dt(year=2022,month=12,day=31) - dt(year=now.year, month=now.month, day=now.day, hour=now.hour, minute=now.minute)
+print_slow("My personal Event Date is: " + my_e_date4)
+time.sleep(1)
+print()
+event2 = dt(year=2023,month=7,day=28) - dt(year=now.year, month=now.month, day=now.day, hour=now.hour, minute=now.minute)
 
 print()
-print("There are:", event2 , " left to Event Date!")
+print_slow2("Because hopefully after that, ...")
+print()
+print_slow2("I get a Job and therefore ...")
+print()
+print_slow2("my Social Life back, after all !!!")
+print()
+time.sleep(1)
+print()
+print_slow2("Keep Smilling until ...")
+print()
+time.sleep(1)
+print()
+print("Because there are:", event2 , " left to my Event Date!")
 print()
